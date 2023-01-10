@@ -1,0 +1,4 @@
+#install zip package on all app server in nautlus projects
+ssh tony@stapp01
+yum install zip
+#do same command to stapp02 stapp03
