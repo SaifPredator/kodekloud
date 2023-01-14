@@ -1,0 +1,30 @@
+ssh clint@stbkp01
+sudo su -
+vi /etc/yum.repos.d/local_yum.repo
+cat /etc/yum.repos.d/local_yum.repo
+
+[local_yum]
+
+name=local_yum
+
+baseurl=file:///packages/downloaded_rpms/
+
+enabled = 1
+
+gpgcheck = 0
+yum repolist
+
+Loaded plugins: fastestmirror, ovl
+
+Loading mirror speeds from cached hostfile
+
+local_yum                                                                                                           | 2.9 kB  00:00:00    
+
+local_yum/primary_db                                                                                                |  57 kB  00:00:00    
+
+repo id                                                           repo name                                                          status
+
+local_yum                                                         local_yum                                                          55
+
+repolist: 55
+yum install httpd
